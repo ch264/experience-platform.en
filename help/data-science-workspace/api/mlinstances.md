@@ -1,8 +1,9 @@
 ---
-keywords: Experience Platform;developer guide;endpoint;Data Science Workspace;popular topics
+keywords: Experience Platform;developer guide;endpoint;Data Science Workspace;popular topics;mlinstances;sensei machine learning api
 solution: Experience Platform
 title: MLInstances
 topic: Developer guide
+description: An MLInstance is a pairing of an existing Engine with an appropriate set of configurations that defines any training parameters, scoring parameters, or hardware resource configurations.
 ---
 
 # MLInstances
@@ -266,7 +267,9 @@ A successful response returns the details of the MLInstance.
 
 You can update an existing MLInstance by overwriting its properties through a PUT request that includes the target MLInstance's ID in the request path and providing a JSON payload containing updated properties.
 
->[!TIP] In order to ensure the success of this PUT request, it is suggested that first you perform a GET request to [retrieve the MLInstance by ID](#retrieve-specific). Then, modify and update the returned JSON object and apply the entirety of the modified JSON object as the payload for the PUT request.
+>[!TIP]
+>
+>In order to ensure the success of this PUT request, it is suggested that first you perform a GET request to [retrieve the MLInstance by ID](#retrieve-specific). Then, modify and update the returned JSON object and apply the entirety of the modified JSON object as the payload for the PUT request.
 
 The following sample API call will update an MLInstance's training and scoring parameters while having these properties initially:
 

@@ -1,7 +1,8 @@
 ---
-keywords: Experience Platform;home;popular topics
+keywords: Experience Platform;home;popular topics;api;API;XDM;XDM system;;experience data model;Experience data model;Experience Data Model;data model;Data Model;schema registry;Schema Registry;lookup;Lookup;get;GET
 solution: Experience Platform
 title: Look up a resource
+description: You can look up specific resources in the Schema Registry API by making a GET request that includes the $id (URL-encoded URI) of the resource in the request path.
 topic: developer guide
 ---
 
@@ -18,7 +19,7 @@ GET /{CONTAINER_ID}/{RESOURCE_TYPE}/{RESOURCE_ID}
 | Parameter | Description |
 | --- | --- |
 | `{CONTAINER_ID}` | The container where the resources are located ("global" or "tenant"). |
-| `{RESOURCE_TYPE}` | The type of resource to retrieve from the Schema Library. Valid types are `datatypes`, `mixins`, `schemas`, and `classes`. |
+| `{RESOURCE_TYPE}` | The type of resource to retrieve from the [!DNL Schema Library]. Valid types are `datatypes`, `mixins`, `schemas`, and `classes`. |
 | `{RESOURCE_ID}` | The URL-encoded `$id` URI or `meta:altId` of the resource. |
 
 **Request**
@@ -43,7 +44,9 @@ Resource lookup requests require a `version` be included in the Accept header. T
 | `application/vnd.adobe.xed-full-notext+json; version={MAJOR_VERSION}` | `$ref` and `allOf` resolved, no titles or descriptions. |
 | `application/vnd.adobe.xed-full-desc+json; version={MAJOR_VERSION}` | `$ref` and `allOf` resolved, descriptors included. |
 
->[!NOTE] If supplying the `major` version only (1, 2, 3, etc), the registry will return the latest `minor` version (.1, .2, .3, etc) automatically.
+>[!NOTE]
+>
+>If supplying the `major` version only (1, 2, 3, etc), the registry will return the latest `minor` version (.1, .2, .3, etc) automatically.
 
 **Response**
 

@@ -2,7 +2,8 @@
 keywords: Experience Platform;getting started;attribution ai;popular topics
 solution: Experience Platform
 title: Getting started in Attribution AI
-topic: Getting started  
+topic: Getting started
+description: The following guides require an understanding of the various Adobe Experience Platform services involved with using Attribution AI. Before beginning the tutorials, please review the following documents.
 ---
 
 # Getting started in Attribution AI
@@ -23,7 +24,9 @@ Attribution AI requires datasets to conform to the Consumer Experience Events (C
 
 ## Downloading Attribution AI scores
 
->[!NOTE] If you do not need to download raw scores, you can skip this step and proceed to the [next steps](#next-steps).
+>[!NOTE]
+>
+>If you do not need to download raw scores, you can skip this step and proceed to the [next steps](#next-steps).
 
 Downloading Attribution AI scores is done through a combination of API calls. In order to make calls to Platform APIs, you must first complete the [authentication tutorial](../../tutorials/authentication.md). Completing the authentication tutorial provides the values for each of the required headers in all Experience Platform API calls, as shown below:
 
@@ -35,7 +38,9 @@ All resources in Experience Platform are isolated to specific virtual sandboxes.
 
 - x-sandbox-name: `{SANDBOX_NAME}`
 
->[!NOTE] For more information on sandboxes in Platform, see the [sandbox overview documentation](../../sandboxes/home.md). 
+>[!NOTE]
+>
+>For more information on sandboxes in Platform, see the [sandbox overview documentation](../../sandboxes/home.md). 
 
 ### Reading sample API calls
 

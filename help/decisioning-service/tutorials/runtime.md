@@ -1,8 +1,9 @@
 ---
-keywords: Experience Platform;home;popular topics
+keywords: Experience Platform;home;popular topics;decision events;decision event;Decision events
 solution: Experience Platform
 title: Work with Decisioning Service runtime using APIs
 topic: tutorial
+description: This document provides a tutorial for working with the runtime services of Decisioning Service using Adobe Experience Platform APIs. 
 ---
 
 # Work with Decisioning Service runtime using APIs
@@ -13,9 +14,9 @@ This document provides a tutorial for working with the runtime services of [!DNL
 
 This tutorial requires a working understanding of the [!DNL Experience Platform] services involved in decisioning and determining the next best offer to present during customer experiences. Before beginning this tutorial, please review the documentation for the following:
 
-- [!DNL Decisioning Service](./../home.md): Provides the framework for adding and removing offers and creating algorithms for choosing the best to present during a customer's experience.
-- [!DNL Experience Data Model (XDM)](../../xdm/home.md): The standardized framework by which Platform organizes customer experience data.
-- [!DNL Profile Query Language (PQL)](../../segmentation/pql/overview.md): PQL is used to define rules and filters.
+- [[!DNL Decisioning Service]](./../home.md): Provides the framework for adding and removing offers and creating algorithms for choosing the best to present during a customer's experience.
+- [[!DNL Experience Data Model (XDM)]](../../xdm/home.md): The standardized framework by which Platform organizes customer experience data.
+- [[!DNL Profile Query Language (PQL)]](../../segmentation/pql/overview.md): PQL is used to define rules and filters.
 - [Manage Decisioning objects and rules using APIs](./entities.md): Prior to using the Decisioning Services runtime, you will need to set up the related entities.
 
 The following sections provide additional information that you will need to know in order to successfully make calls to the [!DNL Platform] APIs.
@@ -36,7 +37,9 @@ All resources in [!DNL Experience Platform] are isolated to specific virtual san
 
 - x-sandbox-name: `{SANDBOX_NAME}`
 
->[!NOTE] For more information on sandboxes in [!DNL Platform], see the [sandbox overview documentation](../../tutorials/authentication.md).
+>[!NOTE]
+>
+>For more information on sandboxes in [!DNL Platform], see the [sandbox overview documentation](../../tutorials/authentication.md).
 
 All requests that contain a payload (POST, PUT, PATCH) require an additional header:
 
@@ -46,7 +49,9 @@ Also needed for runtime requests:
 
 - x-request-id: `{UUID}`
 
->[!NOTE] `UUID` is a string in UUID format that is globally unique and must not be reused for different API calls
+>[!NOTE]
+>
+>`UUID` is a string in UUID format that is globally unique and must not be reused for different API calls
 
 [!DNL Decisioning Service] is controlled by a number of business objects that are related to each other. All business objects are stored in [!DNL Platform’s] business object repository, XDM Core Object Repository. A key feature of this repository is that the APIs are orthogonal to the type of business object. Instead of using a POST, GET, PUT, PATCH or DELETE API that indicates the type of resource in its API endpoint, there are only 6 generic endpoints but they accept or return a parameter that indicates the type of the object when that disambiguation is needed. The schema must be registered with the repository, but beyond that the repository is usable for an open-ended set of object types.  
 

@@ -1,13 +1,14 @@
 ---
-keywords: Experience Platform;home;popular topics
+keywords: Experience Platform;home;popular topics;api;API;XDM;XDM system;;experience data model;Experience data model;Experience Data Model;data model;Data Model;schema registry;Schema Registry;delete
 solution: Experience Platform
 title: Delete a resource
+describe: It may occasionally be necessary to remove resource from the Schema Registry. Only resources that you create in the tenant container may be deleted. This is done by performing a DELETE request using the $id of the resource you wish to delete.
 topic: developer guide
 ---
 
 # Delete a resource
 
-It may occasionally be necessary to remove (DELETE) a resource from the Schema Registry. Only resources that you create in the tenant container may be deleted. This is done by performing a DELETE request using the `$id` of the resource you wish to delete.
+It may occasionally be necessary to remove (DELETE) a resource from the [!DNL Schema Registry]. Only resources that you create in the tenant container may be deleted. This is done by performing a DELETE request using the `$id` of the resource you wish to delete.
 
 **API format**
 
@@ -17,7 +18,7 @@ DELETE /tenant/{RESOURCE_TYPE}/{RESOURCE_ID}
 
 | Parameter | Description |
 | --- | --- |
-| `{RESOURCE_TYPE}` | The type of resource to be deleted from the Schema Library. Valid types are `datatypes`, `mixins`, `schemas`, and `classes`. |
+| `{RESOURCE_TYPE}` | The type of resource to be deleted from the [!DNL Schema Library]. Valid types are `datatypes`, `mixins`, `schemas`, and `classes`. |
 | `{RESOURCE_ID}` | The URL-encoded `$id` URI or `meta:altId` of the resource. |
 
 **Request**
@@ -37,4 +38,4 @@ curl -X DELETE \
 
 A successful response returns HTTP status 204 (No Content) and a blank body. 
 
-You can confirm the deletion by attempting a lookup (GET) request to the resource. You will need to include an Accept header in the request, but should receive an HTTP status 404 (Not Found) because the resource has been removed from the Schema Registry.
+You can confirm the deletion by attempting a lookup (GET) request to the resource. You will need to include an Accept header in the request, but should receive an HTTP status 404 (Not Found) because the resource has been removed from the [!DNL Schema Registry].

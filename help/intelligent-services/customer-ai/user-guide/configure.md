@@ -3,6 +3,7 @@ keywords: Experience Platform;user guide;customer ai;popular topics;configure in
 solution: Experience Platform
 title: Configuring a Customer AI instance
 topic: Instance creation
+description: Intelligent Services provide Customer AI as a simple-to-use Adobe Sensei service that can be configured for different use cases. The following sections provide steps for configuring an instance of Customer AI.
 ---
 
 # Configuring a Customer AI instance
@@ -65,7 +66,9 @@ Exclude events as needed and then click **[!UICONTROL Finish]** to create the in
 
 If the instance is created successfully, a prediction run is immediately triggered and subsequent runs execute according to your defined schedule.
 
->[!NOTE] Depending on the size of the input data, prediction runs can take up to 24 hours to complete.
+>[!NOTE]
+>
+>Depending on the size of the input data, prediction runs can take up to 24 hours to complete.
 
 By following this section, you have configured an instance of Customer AI and a prediction run was executed. Upon the run's successful completion, scored insights automatically populate profiles with predicted scores. Please wait up to 24 hours before continuing to the next section of this tutorial.
 

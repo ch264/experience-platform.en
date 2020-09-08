@@ -1,8 +1,9 @@
 ---
-keywords: Experience Platform;home;popular topics
+keywords: Experience Platform;home;popular topics;manage decisioning;decisioning objects api;manage decisioning objects
 solution: Experience Platform
 title: Manage Decisioning Service entities using APIs
 topic: tutorial
+description: This document provides a tutorial for working with the business entities of Decisioning Service using Adobe Experience Platform APIs. 
 ---
 
 # Manage Decisioning objects and rules using APIs
@@ -19,9 +20,9 @@ The tutorial has two parts:
 
 This tutorial requires a working understanding of the [!DNL Experience Platform] services and the API conventions. The [!DNL Platform] repository is a service used by several other [!DNL Platform] services to store business objects and various types of metadata. It provides a secure and flexible way to manage and query those objects for use by several runtime services. The [!DNL Decisioning Service] is one of those. Before beginning this tutorial, please review the documentation for the following:
 
-- [!DNL Experience Data Model (XDM)](../../xdm/home.md): The standardized framework by which Platform organizes customer experience data.
-- [!DNL Decisioning Service](./../home.md): Explains the concepts and components used for Experience Decisioning in general and Offer decisioning in particular. Illustrates the strategies used for choosing the best option to present during a customer's experience.
-- [!DNL Profile Query Language (PQL)](../../segmentation/pql/overview.md): PQL is a powerful language to write expressions over XDM instances. PQL is used to define decision rules.
+- [[!DNL Experience Data Model (XDM)]](../../xdm/home.md): The standardized framework by which Platform organizes customer experience data.
+- [[!DNL Decisioning Service]](./../home.md): Explains the concepts and components used for Experience Decisioning in general and Offer decisioning in particular. Illustrates the strategies used for choosing the best option to present during a customer's experience.
+- [[!DNL Profile Query Language (PQL)]](../../segmentation/pql/overview.md): PQL is a powerful language to write expressions over XDM instances. PQL is used to define decision rules.
 
 The following sections provide additional information that you will need to know in order to successfully make calls to the [!DNL Platform] APIs.
 
@@ -41,7 +42,9 @@ All resources in [!DNL Experience Platform] are isolated to specific virtual san
 
 - x-sandbox-name: `{SANDBOX_NAME}`
 
->[!NOTE] For more information on sandboxes in [!DNL Platform], see the [sandbox overview documentation](../../sandboxes/home.md). 
+>[!NOTE]
+>
+>For more information on sandboxes in [!DNL Platform], see the [sandbox overview documentation](../../sandboxes/home.md). 
 
 All requests that contain a payload (POST, PUT, PATCH) require an additional header:
 
@@ -95,7 +98,9 @@ When the administrator has granted access to containers for regular users or int
 
 The context for the [!DNL Platform] [!DNL Decisioning Service] containers is currently `dma_offers`.
 
->[!NOTE] The context for [!DNL Platform Decisioning Containers] is soon to change to `acp`. Filtering is optional, but filters by only `dma_offers` will require edits upon a future release. To prepare for this change clients should use no filters or apply both product contexts as their filter.
+>[!NOTE]
+>
+>The context for [!DNL Platform Decisioning Containers] is soon to change to `acp`. Filtering is optional, but filters by only `dma_offers` will require edits upon a future release. To prepare for this change clients should use no filters or apply both product contexts as their filter.
 
 **Request**
 
@@ -226,7 +231,9 @@ curl -X GET {ENDPOINT_PATH}/{CONTAINER_ID}/instances/{INSTANCE_ID} \
   -H 'x-request-id: {NEW_UUID}'  
 ```
 
->[!NOTE] Although `instanceId` is given as a path parameter, applications should, whenever possible, not construct the path themselves and instead follow links to instances contained in list and search operations. See sections ‎6.4.4 and ‎6.4.6 for details. 
+>[!NOTE]
+>
+>Although `instanceId` is given as a path parameter, applications should, whenever possible, not construct the path themselves and instead follow links to instances contained in list and search operations. See sections ‎6.4.4 and ‎6.4.6 for details. 
 
 **Response** 
 
@@ -319,7 +326,9 @@ The response depends on the `{schemaId}` specified. For instance for "https<span
 }
 ```
 
->[!NOTE] The result contains the instances for the given schema or the first page of this list. Note, that instances can comply to more than one schema and therefore can appear in more than one list.
+>[!NOTE]
+>
+>The result contains the instances for the given schema or the first page of this list. Note, that instances can comply to more than one schema and therefore can appear in more than one list.
 
 Page resources are transient and are read-only; they cannot be updated or deleted. The paging model provides random access to subsets of a large lists over an extended period of time without maintaining any per-client state.
 
@@ -563,7 +572,9 @@ When using the APIs with the content type `application/vnd.adobe.platform.xcore.
 }
 ```
 
->[!NOTE] For brevity reasons, in the all the JSON snippets only the instance properties are illustrated and only when it is required the envelope properties and _links section is shown. 
+>[!NOTE]
+>
+>For brevity reasons, in the all the JSON snippets only the instance properties are illustrated and only when it is required the envelope properties and _links section is shown. 
 
 ### General offer properties 
 
@@ -760,7 +771,7 @@ https://ns.adobe.com/experience/offer-management/eligibility-rule.
 
 Adding and deleting a rule can be accomplished with a PATCH operation as well:
 
-```
+```json
 [
   {
     "op":   "replace",

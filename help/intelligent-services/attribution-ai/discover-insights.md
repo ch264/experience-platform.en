@@ -1,8 +1,9 @@
 ---
-keywords: Experience Platform;insights;attribution ai;popular topics
+keywords: Experience Platform;insights;attribution ai;popular topics;attribution ai insights
 solution: Experience Platform
 title: Discovering insights in Attribution AI
-topic: Attribution AI insights  
+topic: Attribution AI insights
+description: This document serves as a guide for interacting with service instance insights in the Adobe Intelligent Services user interface.
 ---
 
 # Discovering insights in Attribution AI
@@ -23,7 +24,9 @@ In the [!DNL Adobe Experience Platform] UI, click **Services** in the left navig
 
 The Attribution AI service page appears. This page lists service instances of Attribution AI and displays information about them, including the name of the instance, conversion events, how often the instance is run, and the status of the last update. Click on a service instance name to begin.
 
->[!NOTE] Only service instances that have completed successful scoring runs can be selected.
+>[!NOTE]
+>
+>Only service instances that have completed successful scoring runs can be selected.
 
 ![Create instance](./images/insights/select-service-instance.png)
 
@@ -65,7 +68,9 @@ The *More actions* button is located in the top-right navigation next to *Edit*.
 
 Attribution AI insights allow you to filter your data and automatically update the UI visuals based on your selected filters.
 
->[!NOTE] By default, every filter is set to "All" except the *Attribution model* filter which is set to "Incremental and Influenced attributed conversions".
+>[!NOTE]
+>
+>By default, every filter is set to "All" except the *Attribution model* filter which is set to "Incremental and Influenced attributed conversions".
 
 ### Conversion event
 
@@ -91,11 +96,15 @@ The *Product* filter allows you to select from any products that were initially 
 
 The *Geography* filter populates country codes based on region-based models. Depending on your data this filter may or may not be present.
 
->[!NOTE] Country codes are two characters long. A complete list can be found here [ISO 3166-1 alpha-2](https://datahub.io/core/country-list).
+>[!NOTE]
+>
+>Country codes are two characters long. A complete list can be found here [ISO 3166-1 alpha-2](https://datahub.io/core/country-list).
 
 ### Region
 
->[!NOTE] This filter is only present if you performed the optional step [region-based modeling](./user-guide.md#region-based-modeling-optional) in the Attribution AI user interface guide when creating your service instance. 
+>[!NOTE]
+>
+>This filter is only present if you performed the optional step [region-based modeling](./user-guide.md#region-based-modeling-optional) in the Attribution AI user interface guide when creating your service instance. 
 
 This filter allows you select any regions you set up in the instance creation process.
 

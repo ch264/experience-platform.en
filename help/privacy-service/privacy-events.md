@@ -5,20 +5,20 @@ title: Subscribe to Privacy Events
 topic: privacy events
 ---
 
-# Subscribe to Privacy Events
+# Subscribe to [!DNL Privacy Events]
 
-Privacy Events are messages provided by Adobe Experience Platform Privacy Service, which leverage Adobe I/O Events sent to a configured webhook to facilitate efficient job request automation. They reduce or eliminate the need to poll the Privacy Service API in order to check if a job is complete or if a certain milestone within a workflow has been reached.
+[!DNL Privacy Events] are messages provided by Adobe Experience Platform [!DNL Privacy Service], which leverage Adobe I/O Events sent to a configured webhook to facilitate efficient job request automation. They reduce or eliminate the need to poll the [!DNL Privacy Service] API in order to check if a job is complete or if a certain milestone within a workflow has been reached.
 
 There are currently four types of notifications related to the privacy job request lifecycle:
 
 Type | Description
 --- | ---
-Job Complete | All Experience Cloud solutions have reported back and the overall or global status of the job has been marked as complete.
+Job Complete | All [!DNL Experience Cloud] solutions have reported back and the overall or global status of the job has been marked as complete.
 Job Error | One or more solutions have reported an error while processing the request.
 Product Complete | One of the solutions associated with this job has completed its work.
 Product Error | One of the solutions reported an error while processing the request.
 
-This document provides steps for setting up an integration for Privacy Service notifications within Adobe I/O. For a high-level overview of Privacy Service and its features, see the [Privacy Service overview](home.md).
+This document provides steps for setting up an integration for [!DNL Privacy Service] notifications within Adobe I/O. For a high-level overview of [!DNL Privacy Service] and its features, see the [Privacy Service overview](home.md).
 
 ## Getting started
 
@@ -79,7 +79,7 @@ The _Add events_ dialog appears. Select **[!UICONTROL Experience Cloud]** to fil
 
 ![](./images/privacy-events/add-privacy-events.png)
 
-The _Configure event registration_ dialog appears. Select which events you would like to receive by selecting their corresponding checkboxes. Events that you select appear under _[!UICONTROL Subscribed Events]_ in the left column. When finished, click **[!UICONTROL Next]**.
+The _Configure event registration_ dialog appears. Select which events you would like to receive by selecting their corresponding checkboxes. Events that you select appear under **[!UICONTROL Subscribed Events]** in the left column. When finished, click **[!UICONTROL Next]**.
 
 ![](./images/privacy-events/choose-subscriptions.png)
 
@@ -99,15 +99,15 @@ In the next screen, provide a name and description for the event registration. B
 
 ![](./images/privacy-events/event-details.png)
 
-Further down on the same screen, you are given two options for configuring how to receive events. Select **[!UICONTROL Webhook]** and provide the `Forwarding` URL for the ngrok webhook you created earlier under _[!UICONTROL Webhook URL]_. Next, select your preferred delivery style (single or batch) before clicking **[!UICONTROL Save configured events]** to complete the event registration.
+Further down on the same screen, you are given two options for configuring how to receive events. Select **[!UICONTROL Webhook]** and provide the `Forwarding` URL for the ngrok webhook you created earlier under **[!UICONTROL Webhook URL]**. Next, select your preferred delivery style (single or batch) before clicking **[!UICONTROL Save configured events]** to complete the event registration.
 
 ![](./images/privacy-events/webhook-details.png)
 
-The details page for your project reappears, with Privacy Events appearing under _[!UICONTROL Events]_ in the left navigation.
+The details page for your project reappears, with [!DNL Privacy Events] appearing under **[!UICONTROL Events]** in the left navigation.
 
 ## View event data
 
-Once you have registered Privacy Events with your project and privacy jobs have been processed, you can view any received notifications for that registration. From the **[!UICONTROL Projects]** tab in Developer Console, select your project from the list to open the _Product overview_ page. From here, select **[!UICONTROL Privacy Events]** from the left navigation.
+Once you have registered [!DNL Privacy Events] with your project and privacy jobs have been processed, you can view any received notifications for that registration. From the **[!UICONTROL Projects]** tab in Developer Console, select your project from the list to open the _Product overview_ page. From here, select **[!UICONTROL Privacy Events]** from the left navigation.
 
 ![](./images/privacy-events/events-left-nav.png)
 
@@ -119,7 +119,7 @@ Click the **[!UICONTROL Debug Tracing]** tab to view a list of received events. 
 
 ![](images/privacy-events/debug-tracing.png)
 
-The _[!UICONTROL Payload]_ section provides details about the selected event, including its event type (`com.adobe.platform.gdpr.productcomplete`) as highlighted in the example above.
+The **[!UICONTROL Payload]** section provides details about the selected event, including its event type (`com.adobe.platform.gdpr.productcomplete`) as highlighted in the example above.
 
 ## Next steps
 

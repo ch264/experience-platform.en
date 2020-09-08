@@ -1,8 +1,9 @@
 ---
-keywords: Experience Platform;home;popular topics
+keywords: Experience Platform;home;popular topics;identity service api;identity service developer guide;region
 solution: Experience Platform
 title: Getting started
 topic: API guide
+description: Adobe Experience Platform Identity Service manages the cross-device, cross-channel, and near real-time identification of your customers in what is known as an identity graph within Adobe Experience Platform. 
 ---
 
 # [!DNL Identity Service] API developer guide
@@ -13,9 +14,9 @@ Adobe Experience Platform [!DNL Identity Service] manages the cross-device, cros
 
 This guide requires a working understanding of the following components of Adobe Experience Platform:
 
-- [!DNL Identity Service](../home.md): Solves the fundamental challenge posed by the fragmentation of customer profile data. It does this by bridging identities across devices and systems where customers interact with you brand.
-- [!DNL Real-time Customer Profile](../../profile/home.md): Provides a unified, consumer profile in real-time based on aggregated data from multiple sources. 
-- [!DNL Experience Data Model (XDM)](../../xdm/home.md): The standardized framework by which [!DNL Platform] organizes customer experience data.
+- [[!DNL Identity Service]](../home.md): Solves the fundamental challenge posed by the fragmentation of customer profile data. It does this by bridging identities across devices and systems where customers interact with you brand.
+- [[!DNL Real-time Customer Profile]](../../profile/home.md): Provides a unified, consumer profile in real-time based on aggregated data from multiple sources. 
+- [[!DNL Experience Data Model (XDM)]](../../xdm/home.md): The standardized framework by which [!DNL Platform] organizes customer experience data.
 
 The following sections provide additional information that you will need to know or have on-hand in order to successfully make calls to the [!DNL Identity Service] API.
 
@@ -35,7 +36,9 @@ All resources in [!DNL Experience Platform] are isolated to specific virtual san
 
 - x-sandbox-name: `{SANDBOX_NAME}`
 
->[!NOTE] For more information on sandboxes in [!DNL Platform], see the [sandbox overview documentation](../../sandboxes/home.md).
+>[!NOTE]
+>
+>For more information on sandboxes in [!DNL Platform], see the [sandbox overview documentation](../../sandboxes/home.md).
 
 All requests that contain a payload (POST, PUT, PATCH) require an additional header:
 
@@ -54,7 +57,9 @@ The table below shows example paths using regions:
 | [!DNL Identity Service] API | https://</span>platform-va7.adobe.</span>io/data/core/identity/{ENDPOINT}|https://</span>platform-nld2.adobe.</span>io/data/core/identity/{ENDPOINT} |
 | [!DNL Identity Namespace] API | https://</span>platform-va7.adobe.</span>io/data/core/idnamespace/{ENDPOINT}|https://</span>platform-nld2.adobe.</span>io/data/core/idnamespace{ENDPOINT} |
 
->[!NOTE] Requests made without specifying a region may result in calls routing to the incorrect region or cause calls to fail unexpectedly.
+>[!NOTE]
+>
+>Requests made without specifying a region may result in calls routing to the incorrect region or cause calls to fail unexpectedly.
 
 If you are unable to locate the region within your IMS Org profile, please contact your system administrator for support.
 
@@ -70,7 +75,9 @@ To limit the payload in responses, APIs adapt their responses to the type of ide
 
 The examples in this document do not cover the complete functionality of the [!DNL Identity Service] API. For the complete API, see the [Swagger API Reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/id-service-api.yaml).
 
->[!NOTE] All identities returned will be in native XID form when native XID is used in the request. Using the ID/namespace form is recommended. For more information, see the section on [getting the XID for an identity](./create-custom-namespace.md).
+>[!NOTE]
+>
+>All identities returned will be in native XID form when native XID is used in the request. Using the ID/namespace form is recommended. For more information, see the section on [getting the XID for an identity](./create-custom-namespace.md).
 
 ## Next steps
 

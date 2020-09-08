@@ -1,13 +1,16 @@
 ---
-keywords: Experience Platform;home;popular topics
+keywords: Experience Platform;home;popular topics;list active sandboxes;list sandboxes
 solution: Experience Platform
 title: List active sandboxes for the current user
 topic: developer guide
+description: You can list the sandboxes that are active for the current user by making a GET request to the root endpoint.
 ---
 
 # List active sandboxes for the current user
 
->[!NOTE] Unlike other endpoints provided in the Sandbox API, this endpoint is available for all users, including those without Sandbox Administration access permissions.
+>[!NOTE]
+>
+>Unlike other endpoints provided in the Sandbox API, this endpoint is available for all users, including those without Sandbox Administration access permissions.
 
 You can list the sandboxes that are active for the current user by making a GET request to the root (`/`) endpoint.
 
@@ -21,7 +24,7 @@ GET /
 
 ```shell
 curl -X GET \
-  https://platform.adobe.io/data/foundation/sandbox-management \
+  https://platform.adobe.io/data/foundation/sandbox-management/ \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {IMS_ORG}' \

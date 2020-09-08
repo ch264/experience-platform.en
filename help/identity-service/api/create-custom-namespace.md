@@ -1,8 +1,9 @@
 ---
-keywords: Experience Platform;home;popular topics
+keywords: Experience Platform;home;popular topics;namespace;Namespace;namespaces;Namespaces;identity namespace;Identity namespace;identity;Identity
 solution: Experience Platform
 title: Create a custom namespace
 topic: API guide
+description: Using the Identity Namespace API, you can create a custom identity namespace that will be available only to your organization.
 ---
 
 # Creating a custom namespace
@@ -11,7 +12,9 @@ Using the [!DNL Identity Namespace] API, you can create a custom identity namesp
 
 For recommendations around creating custom namespaces, see [the Identity Service FAQ documentation](../troubleshooting-guide.md).
 
->[!NOTE] Namespaces are a qualifier for identities. As such, once a namespace has been created, it cannot be deleted.
+>[!NOTE]
+>
+>Namespaces are a qualifier for identities. As such, once a namespace has been created, it cannot be deleted.
 
 **API format**
 

@@ -3,6 +3,7 @@ title: Interacting with multiple properties
 seo-title: Adobe Experience Platform Web SDK Interacting with multiple properties
 description: Learn how to interact with multiple Experience Platform Web SDK properties
 seo-description: Learn how to interact with multiple Experience Platform Web SDK properties
+keywords: multiple properties;configure;sendEvent;edgeConfigId;orgId;
 ---
 
 # Interacting with multiple properties
@@ -59,4 +60,4 @@ Be sure to execute the `configure` command for each instance before executing ot
 
 ## Limitations
 
-To avoid conflicts with cookies, only one instance of Adobe Experience Platform Web SDK within a page can have a particular `edgeConfigId`.  Similarly, only one instance of Adobe Experience Platform Web SDK can have a particular `orgId`.  
+To avoid conflicts with cookies, only one instance of Adobe Experience Platform [!DNL Web SDK] within a page can have a particular `edgeConfigId`.  Similarly, only one instance of Adobe Experience Platform [!DNL Web SDK] can have a particular `orgId`.  

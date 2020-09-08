@@ -2,6 +2,7 @@
 product: experience-platform
 audience: user
 user-guide-title: Adobe Experience Platform Help
+user-guide-description: Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences.
 ---
 
 # Adobe Experience Platform {#landing}
@@ -18,6 +19,7 @@ user-guide-title: Adobe Experience Platform Help
   * [Data Ingestion](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html)
   * [Data Science Workspace](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/home.html)
   * [Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)
+  * [Debugger 2.0 (Beta)](https://docs.adobe.com/content/help/en/debugger/using-v2/experience-cloud-debugger.html)
   * [Decisioning Service](https://docs.adobe.com/content/help/en/experience-platform/decisioning/home.html)
   * [Destinations](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-overview.html)
   * [ETL (Extract, Transform, Load)](https://docs.adobe.com/content/help/en/experience-platform/etl/home.html)

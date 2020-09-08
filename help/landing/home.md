@@ -1,8 +1,9 @@
 ---
-keywords: Experience Platform;home;popular topics
+keywords: Experience Platform;home;popular topics;CJA;journey analytics;customer journey analytics;campaign orchestration;orchestration;customer journey;journey;journey orchestration;capability;region
 solution: Experience Platform
 title: Adobe Experience Platform overview
 topic: getting started
+description: Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences.
 ---
 
 # Adobe Experience Platform overview
@@ -15,7 +16,7 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 Built on open APIs, [!DNL Experience Platform] exposes the full functionality of the system to developers, supporting the easy integration of enterprise solutions using familiar tools. [!DNL Experience Platform] also supports partners to build and integrate their own products and technologies as needed. This power and flexibility makes [!DNL Experience Platform] unique in the market. It gives partners, customers, and a community of developers a foundation on which to build innovations that drive The Experience Business: exceeding customer expectations by delivering a continually improving, fully-personalized experience drawn from a 360-degree view of the customer and their individual preferences.
 
-The following videos outlines a hypothetical experience built with Adobe Experience Platform, as seen from the perspective of a customer. See how [!DNL Experience Platform] creates a rich, relevant and real-time experience.
+The following videos outline how [!DNL Experience Platform] creates rich, relevant, real-time experiences, first from the customer perspective, then from a behind-the-scenes technical perspective.
 
 **Customer perspective:**
 
@@ -24,6 +25,22 @@ The following videos outlines a hypothetical experience built with Adobe Experie
 **Behind the scenes:**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28144?quality=12&learn=on)
+
+## Browser support
+
+The Adobe Experience Platform is designed to work optimally in the **latest versions** of Google Chrome, Safari, Firefox, and Microsoft Edge. You might have trouble using certain features on older versions of browsers. 
+
+| Operating system | Supported browsers |
+|---|---|
+| **Mac OS X** | Google Chrome, Safari, Firefox |
+| **Windows 10** | Google Chrome, Microsoft Edge, Firefox |
+| **Windows 7** | Google Chrome, Firefox |
+ 
+These operating systems and browsers are not supported:
+
+* Windows 8
+* Internet Explorer 10
+* Opera
 
 ## Language support
 
@@ -57,6 +74,13 @@ The Adobe Experience Platform documentation is available in several languages. T
 ## [!DNL Experience Platform] documentation
 
 [!DNL Experience Platform] documentation is provided in multiple formats for a variety of features and services. To learn more about the types of documentation that are available, as well as to read brief descriptions of each of the [!DNL Platform] services, please visit the [Experience Platform documentation overview](documentation/overview.md). Or, to begin learning more about a specific [!DNL Platform] service right away, select a guide from the alphabetical list in the left navigation.
+
+### Documentation for application services built on top of [!DNL Experience Platform]
+
+In addition to the services in the left navigation, Adobe has built other application services on top of Experience Platform. You can find documentation for these services in their own documentation repositories, linked below:
+
+* [[!DNL Customer Journey Analytics]](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html) 
+* [[!DNL Journey Orchestration]](https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html)
 
 >[!NOTE]
 >
@@ -110,7 +134,7 @@ One of the key benefits provided by Adobe Experience Platform is its capability 
 
 >[!VIDEO](https://video.tv.adobe.com/v/32553?quality=12&learn=on)
 
-For additional information on the architecture that powers of Adobe Experience Platform, please watch the following video:
+For additional information on the architecture that powers Adobe Experience Platform, please watch the following video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456?quality=12&learn=on)
 
@@ -127,12 +151,7 @@ The following videos outline the key capabilities and use cases for [!DNL Experi
 >[!VIDEO](https://video.tv.adobe.com/v/32806?quality=12&learn=on)
 
 
-
-
-
  
-
-
 
 <!-- 
 ## What's New

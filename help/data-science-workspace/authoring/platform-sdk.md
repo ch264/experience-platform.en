@@ -3,6 +3,7 @@ keywords: Experience Platform;developer guide;SDK;Data Access SDK;Data Science W
 solution: Experience Platform
 title: Platform SDK guide
 topic: SDK authoring
+description: This tutorial provides you with information on converting data_access_sdk_python to the new Python platform_sdk in both Python and R.
 ---
 
 # [!DNL Platform] SDK guide
@@ -71,7 +72,9 @@ If your read time is taking too long, you can try using one of the following fil
 - [Filtering data by column](#filter-by-selected-columns)
 - [Getting sorted results](#get-sorted-results)
 
->[!NOTE] The IMS Org is set within the `client_context`. 
+>[!NOTE]
+>
+>The IMS Org is set within the `client_context`. 
 
 ### Python
 
@@ -185,7 +188,9 @@ df <- dataset_reader$sort(c(('column-a', 'asc'), ('column-b', 'desc')))$read()
 
 ## Basic writing of data {#basic-writing-of-data}
 
->[!NOTE] The IMS Org is set within the `client_context`. 
+>[!NOTE]
+>
+>The IMS Org is set within the `client_context`. 
 
 To write data in Python and R, use one of the following examples below:
 
